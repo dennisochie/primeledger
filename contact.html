@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Prime Ledger Group</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section__label">Reach Out</span>
+        <h1>Contact Us</h1>
+        <div class="gold-bar"></div>
+        <p>We'd love to hear from you. Let's explore how Prime Ledger Group can serve your organisation.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- FORM -->
+        <div class="contact-form-wrap">
+          <span class="section__label">Send a Message</span>
+          <h2 class="section__title">Get in Touch</h2>
+          <div class="gold-bar"></div>
+
+          <!--
+            FORMSPREE SETUP:
+            1. Go to https://formspree.io and create a free account.
+            2. Create a new form and copy your endpoint URL.
+            3. Replace "YOUR_FORMSPREE_ENDPOINT" below with your actual URL.
+               e.g. action="https://formspree.io/f/xabc1234"
+          -->
+          <form
+            id="contact-form"
+            action="YOUR_FORMSPREE_ENDPOINT"
+            method="POST"
+            class="contact-form"
+            novalidate
+          >
+            <div class="grid-2" style="gap:20px;">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first_name" required placeholder="John">
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last_name" required placeholder="Doe">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="john@company.com">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000">
+            </div>
+
+            <div class="form-group">
+              <label for="organisation">Organisation</label>
+              <input type="text" id="organisation" name="organisation" placeholder="Your Company Name">
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service of Interest</label>
+              <select id="service" name="service">
+                <option value="" disabled selected>Select a service...</option>
+                <option value="project-management">Project Management</option>
+                <option value="financial-services">Financial Services</option>
+                <option value="procurement-services">Procurement Services</option>
+                <option value="ethical-mineral-mandate">Ethical Mineral Mandate</option>
+                <option value="general">General Enquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your project or enquiry..."></textarea>
+            </div>
+
+            <!-- Hidden Formspree fields -->
+            <input type="hidden" name="_subject" value="New Enquiry — Prime Ledger Group Website">
+            <input type="text" name="_gotcha" style="display:none">
+
+            <button type="submit" class="btn btn--gold btn--full" id="submit-btn">
+              Send Message
+            </button>
+
+            <div id="form-success" class="form-msg form-msg--success" style="display:none;">
+              ✓ Thank you! Your message has been sent. We'll be in touch shortly.
+            </div>
+            <div id="form-error" class="form-msg form-msg--error" style="display:none;">
+              ✗ Oops! Something went wrong. Please try again or email us directly.
+            </div>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+          <span class="section__label">Contact Information</span>
+          <h2 class="section__title">Find Us</h2>
+          <div class="gold-bar"></div>
+
+          <div class="info-items">
+            <div class="info-item">
+              <div class="info-item__icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Our Office</h4>
+                <p>123 Finance Avenue<br>Westlands, Nairobi<br>Kenya</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-item__icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.72 12 19.79 19.79 0 011.65 3.43 2 2 0 013.62 1.25h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.84a16 16 0 006.29 6.29l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>+254 700 000 000<br>+254 711 000 000</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-item__icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>info@primeledgergroup.com<br>advisory@primeledgergroup.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-item__icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h4>Business Hours</h4>
+                <p>Monday – Friday: 8:00 AM – 5:00 PM<br>Saturday: 9:00 AM – 1:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="components.js"></script>
+
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .btn--full { width: 100%; text-align: center; }
+
+    /* Info items */
+    .info-items { margin-top: 40px; display: flex; flex-direction: column; gap: 32px; }
+    .info-item { display: flex; gap: 18px; align-items: flex-start; }
+    .info-item__icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      border-radius: 50%;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.2);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold);
+    }
+    .info-item h4 { margin-bottom: 4px; font-size: 0.95rem; }
+    .info-item p { color: var(--slate); font-size: 0.9rem; line-height: 1.7; }
+
+    /* Form messages */
+    .form-msg {
+      margin-top: 16px;
+      padding: 14px 20px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .form-msg--success { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+    .form-msg--error   { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    }
+  </style>
+
+  <script>
+    /* Formspree AJAX submission */
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const successMsg = document.getElementById('form-success');
+    const errorMsg = document.getElementById('form-error');
+
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        submitBtn.textContent = 'Sending…';
+        submitBtn.disabled = true;
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'none';
+
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (res.ok) {
+            form.reset();
+            successMsg.style.display = 'block';
+          } else {
+            errorMsg.style.display = 'block';
+          }
+        } catch {
+          errorMsg.style.display = 'block';
+        } finally {
+          submitBtn.textContent = 'Send Message';
+          submitBtn.disabled = false;
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
